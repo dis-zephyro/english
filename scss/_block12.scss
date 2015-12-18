@@ -1,0 +1,145 @@
+.b12 {
+	color: #1e1e1e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fff url("../img/b08_bg.jpg") 50% 100% no-repeat;
+
+	h2 {
+		font-size: 27px;
+		line-height: 30px;
+		margin-bottom: 50px;
+	}
+
+	.head {
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+
+
+	.victory {
+		height: 431px;
+		overflow: hidden;
+		padding: 35px 35px;
+		position: relative;
+		margin-bottom: 80px;
+		background: url("../img/victory_bg.png") 50% 0 no-repeat;
+		@include box-shadow(0px 0px 15px 0px rgba(0, 0, 0, .2));
+
+		.victory-slider-item {
+			outline: none;
+		}
+
+		.victory-author {
+			float: left;
+			width: 310px;
+			text-align: center;
+
+			.victory-name {
+				font-size: 15px;
+				font-weight: 900;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+
+			.victory-image {
+				width: 216px;
+				height: 216px;
+				overflow: hidden;
+				margin: 0 auto 25px auto;
+				@include border-radius(50%);
+			}
+
+			.btn-vk {
+				margin: 0;
+				padding: 0;
+				width: 163px;
+				height: 47px;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				display: inline-block;
+				background: url("../img/btn-vk.png") 0 0 no-repeat;
+
+				&:hover {
+					background-position: 0 -47px;
+				}
+			}
+
+		}
+
+		.victory-video {
+			float: right;
+			width: 610px;
+			padding: 6px;
+			background: #f6f6f6;
+		}
+
+		.victory-nav {
+			top: 50%;
+			width: 35px;
+			height: 57px;
+			cursor: pointer;
+			margin-top: -28px;
+			position: absolute;
+			background: url("../img/hotel-nav.png") no-repeat;
+
+			&.prev {
+				left: -3px;
+				background-position: 0 0;
+			}
+
+			&.next {
+				right: -3px;
+				background-position: -35px 0;
+			}
+		}
+	}
+
+	.photo {
+		height: 233px;
+		overflow: hidden;
+		position: relative;
+		padding: 12px 10px;
+		background: url("../img/pattern-rose.png");
+
+		.photo-image {
+			position: relative;
+		}
+
+		.photo-item {
+			float: left;
+			width: 315px;
+			overflow: hidden;
+			margin: 0 6px;
+			outline: none;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.photo-nav {
+			top: 50%;
+			width: 35px;
+			height: 57px;
+			cursor: pointer;
+			margin-top: -28px;
+			position: absolute;
+			background: url("../img/hotel-nav.png") no-repeat;
+
+			&.prev {
+				left: 0;
+				background-position: 0 0;
+			}
+
+			&.next {
+				right: 0;
+				background-position: -35px 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+.b05 {
+	color: #fff;
+	height: 1320px;
+	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
+
+	.container {
+		height: 1320px;
+		padding-top: 60px;
+	}
+
+	h2 {
+		font-size: 44px;
+		line-height: 50px;
+		margin-bottom: 40px;
+	}
+
+	.video {
+		width: 796px;
+		border: 7px solid #616167;
+		margin: 0 auto 60px auto;
+		@include box-shadow(0px 12px 15px 0px rgba(0, 0, 0, .3));
+	}
+
+	.head {
+		font-size: 34px;
+		font-weight: 900;
+		line-height: 40px;
+		text-align: center;
+
+		span {
+			display: block;
+			margin-bottom: 30px;
+		}
+	}
+
+	.why {
+		bottom: 0;
+		left: 30px;
+		width: 970px;
+		height: 514px;
+		color: #343434;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+		position: absolute;
+		padding: 80px 80px 20px 50px;
+		background: url("../img/who_bg.png") 0 0 no-repeat;
+
+		.who-title {
+			font-size: 20px;
+			font-weight: 900;
+			line-height: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.invalid {
+		float: left;
+		width: 350px;
+
+		ul {
+			margin: 0;
+			list-style: none;
+			padding: 20px 15px;
+			border: 3px solid $color-rose;
+
+			li {
+				min-height: 40px;
+				padding-left: 55px;
+				margin-bottom: 25px;
+				background: url("../img/icon-invalid.png") 0 0 no-repeat;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.valid {
+		float: right;
+		width: 440px;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				min-height: 40px;
+				padding-left: 55px;
+				margin-bottom: 25px;
+				background: url("../img/icon-check-green.png") 0 0 no-repeat;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

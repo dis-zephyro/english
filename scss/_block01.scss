@@ -1,0 +1,99 @@
+.b01 {
+	height: 815px;
+	background: url("../img/b01_bg.jpg") 50% 0 no-repeat;
+
+	.top {
+		height: 138px;
+		padding-top: 32px;
+		margin-bottom: 25px;
+		background: rgba(42,53,64,0.5);
+
+		.logo {
+			float: left;
+			width: 145px;
+		}
+	}
+
+	.contact {
+		float: right;
+		width: 300px;
+		text-align: right;
+
+		.phone {
+			color: #fff;
+			display: inline-block;
+			font-size: 28px;
+			font-weight: 900;
+			line-height: 28px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.head {
+		color: #fff;
+		font-size: 35px;
+		font-weight: 900;
+		line-height: 40px;
+		text-align: center;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+
+	.text {
+		color: #fff;
+		font-size: 22px;
+		font-weight: 900;
+		line-height: 31px;
+		text-align: center;
+		margin-bottom: 30px;
+
+		span {
+			display: block;
+			font-size: 31px;
+			text-transform: uppercase;
+		}
+	}
+
+	.top-text {
+		top: 10px;
+		left: 210px;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 900;
+		line-height: 20px;
+		position: absolute;
+		text-transform: uppercase;
+	}
+
+	.topnav {
+		top: 40px;
+		left: 190px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+
+		li {
+			float: left;
+			margin: 0 22px;
+
+			a {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 900;
+				line-height: 20px;
+				text-decoration: none;
+				border-bottom: 1px dashed #fff;
+
+				&:hover {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+	}
+
+
+	.form-block {
+		float: right;
+	}
+}

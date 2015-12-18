@@ -1,0 +1,35 @@
+.b09 {
+	color: #fff;
+	height: 810px;
+	padding-top: 80px;
+	background: url("../img/b09_bg.jpg") 50% 0 no-repeat;
+
+	h2 {
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+	.sub-title {
+		font-size: 28px;
+		font-weight: 900;
+		line-height: 30px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+
+	.text {
+		font-size: 20px;
+		font-weight: 900;
+		line-height: 20px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.video {
+		width: 796px;
+		border: 7px solid #616167;
+		margin: 0 auto 60px auto;
+		@include box-shadow(0px 12px 15px 0px rgba(0, 0, 0, .3));
+	}
+}

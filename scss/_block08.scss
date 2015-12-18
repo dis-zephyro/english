@@ -1,0 +1,112 @@
+.b08 {
+	color: #000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fff url("../img/b08_bg.jpg") 50% 100% no-repeat;
+
+	h2 {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+
+	.sub-title {
+		font-size: 23px;
+		font-weight: 900;
+		line-height: 25px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 900;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.head {
+		font-size: 26px;
+		font-weight: 900;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 40px;
+		text-transform: uppercase;
+
+		.sm {
+			display: block;
+			text-transform: capitalize;
+		}
+	}
+
+	.travel {
+		margin-bottom: 50px;
+
+		li {
+			color: #000;
+			float: left;
+			width: 330px;
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 18px;
+			text-align: center;
+			padding-top: 140px;
+
+			&.item1 {
+				background: url("../img/b08_item1.png") 50% 0 no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b08_item2.png") 50% 0 no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b08_item3.png") 50% 0 no-repeat;
+			}
+		}
+	}
+
+	.hotel {
+		height: 233px;
+		overflow: hidden;
+		position: relative;
+		padding: 12px 10px;
+		background: url("../img/pattern-rose.png");
+
+		.hotel-image {
+			position: relative;
+		}
+
+		.hotel-item {
+			float: left;
+			width: 315px;
+			overflow: hidden;
+			margin: 0 6px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.hotel-nav {
+			top: 50%;
+			width: 35px;
+			height: 57px;
+			cursor: pointer;
+			margin-top: -28px;
+			position: absolute;
+			background: url("../img/hotel-nav.png") no-repeat;
+
+			&.prev {
+				left: 0;
+				background-position: 0 0;
+			}
+
+			&.next {
+				right: 0;
+				background-position: -35px 0;
+			}
+		}
+	}
+}
