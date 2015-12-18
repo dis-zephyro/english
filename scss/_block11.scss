@@ -4,6 +4,17 @@
 	padding-top: 60px;
 	background: url("../img/b11_bg.jpg") 50% 0  no-repeat;
 
+	&:after {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: ' ';
+		position: absolute;
+		background: url("../img/decoration-03.png") 50% 0 no-repeat;
+	}
+
+
 	h2 {
 		font-size: 30px;
 		line-height: 30px;
@@ -22,5 +33,15 @@
 	.form-block {
 		float: right;
 		position: relative;
+
+		&:before {
+			top: -40px;
+			left: -15px;
+			width: 390px;
+			height: 76px;
+			content: ' ';
+			position: absolute;
+			background: url("../img/decoration-02.png") 0 0 no-repeat;
+		}
 	}
 }

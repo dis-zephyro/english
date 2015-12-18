@@ -17,6 +17,7 @@ html {
 
 
 body {
+	position: relative;
 	font-family: $font-base;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
@@ -35,10 +36,18 @@ textarea {
 	line-height: inherit;
 }
 
+section {
+	position: relative;
+
+	&:after {
+		z-index: 10;
+	}
+}
 
 .container {
 	width: 1024px;
 	margin: 0 auto;
+	z-index: 100;
 	position: relative;
 	padding-left: 17px;
 	padding-right: 17px;
@@ -88,7 +97,6 @@ ul {
 .color-rose {
 	color: $color-rose;
 }
-
 
 .done {
 	width: 100%;

@@ -36,7 +36,7 @@ $('.photo-nav.next').click(function(){
 
 $('.victory-slider').slick({
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     autoplaySpeed: 5000,
     slidesToShow: 1,
@@ -60,12 +60,19 @@ $(".btn-modal").fancybox({
 });
 
 
+// ----- РњР°СЃРєР° ----------
+jQuery(function($){
+    $("input[name='phone']").mask("+7(999) 999-9999");
+});
+
+
+
 $(document).ready(function() {
 
-    $('.btn-submit').click(function() {
+    $('.btn-send').click(function() {
 
-        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
-        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        $('body').find('form:not(this)').children('div').removeClass('red'); //СѓРґР°Р»РµРЅРёРµ РІСЃРµС… СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ(РІР°Р»РёРґР°С‚РѕСЂР°)
+        var answer = checkForm($(this).closest('form').get(0)); //РѕС‚РІРµС‚ РѕС‚ РІР°Р»РёРґР°С‚РѕСЂР°
         if(answer != false)
         {
             var $form = $(this).closest('form'),
@@ -79,10 +86,17 @@ $(document).ready(function() {
                 data: {name: name, phone: phone, email:email}
             }).done(function(msg) {
                 $('form').find('input[type=text], textarea').val('');
-                console.log('удачно');
-                document.location.href = "http://fantom159.ru/done.html";
+                console.log('СѓРґР°С‡РЅРѕ');
+                document.location.href = "http://englishtolondon.ru/done.html";
             });
         }
     });
 
+});
+
+
+$('.topnav li a').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, 500, {offset:-140 });
+    return false;
 });

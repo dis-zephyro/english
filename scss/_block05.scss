@@ -3,6 +3,17 @@
 	height: 1320px;
 	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
 
+	&:after {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: ' ';
+		position: absolute;
+		background: url("../img/decoration-03.png") 50% 0 no-repeat;
+	}
+
+
 	.container {
 		height: 1320px;
 		padding-top: 60px;

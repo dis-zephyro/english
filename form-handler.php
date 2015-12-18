@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     require 'class.phpmailer.php';
-    $thm = 'Вам отправлено сообщение с сайта phantom159.ru - ';
+    $thm = 'Вам отправлено сообщение с сайта englishtolondon.ru - ';
     $msg =  "<strong>Имя:</strong> $name <br/>";
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
     if(isset($email)){$msg .= "<strong>Email:</strong> $email <br/>";}
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer();
     $mail->From = 'noreply@'. $_SERVER['SERVER_NAME']; // от кого
     $mail->FromName = $_SERVER['SERVER_NAME']; // от кого
-    $mail->AddAddress('zephyro59@yandex.ru', ''); // кому - адрес, Имя
+    $mail->AddAddress('englishtolondon@yandex.ru', ''); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма
