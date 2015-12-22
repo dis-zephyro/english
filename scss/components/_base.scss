@@ -131,4 +131,15 @@ ul {
 		margin-bottom: 50px;
 		padding-top: 40px;
 	}
+
+	.row {
+		width: 700px;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.col {
+			float: left;
+			width: 50%;
+		}
+	}
 }

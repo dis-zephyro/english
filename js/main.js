@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    if (YMaps.location.city != '') {
+     //   $('.country span').html(YMaps.location.country);
+     //   $('.region span').html(YMaps.location.region);
+        $('span.city').html(' в г. ' + YMaps.location.city);
+        console.log(YMaps.location);
+    }
+    else {
+
+    }
+});
+
+
+
 $('.hotel-images').slick({
     arrows: false,
     autoplay: true,

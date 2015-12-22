@@ -2590,6 +2590,13 @@ ul {
     text-align: center;
     margin-bottom: 50px;
     padding-top: 40px; }
+  .done .row {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .done .row .col {
+      float: left;
+      width: 50%; }
 
 .btn {
   margin: 0;
@@ -2789,6 +2796,9 @@ label {
 
 .text-right {
   text-align: right !important; }
+
+.text-left {
+  text-align: left !important; }
 
 .ir {
   background-color: transparent;
@@ -3514,7 +3524,6 @@ label {
       .b08 .travel li.item3 {
         background: url("../img/b08_item3.png") 50% 0 no-repeat; }
   .b08 .hotel {
-    height: 233px;
     overflow: hidden;
     position: relative;
     padding: 12px 10px;
